@@ -1,11 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechWave</title>
-</head>
-<body>
-    <h1>Initial commit</h1>
-</body>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- for tailwind cdn -->
+    <style type="text/tailwindcss">
+      @theme {
+        --breakpoint-tablet: 36rem; /* 576px */
+        --breakpoint-desktop: 62rem; /* 992px */
+      }
+    </style>
+
+    <!-- FAV ICON -->
+    <link rel="icon" type="image/png" href="./assets/headphone.png" />
+  </head>
+  <body>
+    <h1 class="text-red-600 tablet:text-green-600 desktop:text-blue-600">
+      Initial commit
+    </h1>
+  </body>
 </html>
