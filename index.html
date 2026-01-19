@@ -18,6 +18,9 @@
     <style type="text/tailwindcss">
       :root {
         --background: rgba(26, 11, 46, 1);
+        --background-light: rgba(35, 14, 61, 1);
+        --background-lighter: rgba(53, 17, 101, 0.4);
+
         --theme-green: rgba(0, 255, 136, 1);
       }
       @theme {
@@ -34,6 +37,8 @@
 
       @theme inline {
         --color-background: var(--background);
+        --color-background-light: var(--background-light);
+        --color-background-lighter: var(--background-lighter);
         --color-theme-green: var(--theme-green);
 
         /* 
@@ -159,7 +164,7 @@
             </p>
           </div>
 
-          <hr class="opacity-[.1]">
+          <hr class="opacity-[.1]" />
 
           <!-- section content -->
           <div class="flex justify-around items-center gap-[80px] mt-[80px]">
@@ -209,8 +214,165 @@
           </div>
         </div>
       </section>
+
+      <!-- Why Section -->
+      <section class="w-full bg-background-light py-[120px]">
+        <!-- container -->
+        <div class="max-w-[1200px] mx-auto">
+          <!-- section heading -->
+          <div class="text-center mb-[40px]">
+            <h2 class="font-bold text-[48px]">Why Choose TechWave</h2>
+          </div>
+
+          <!-- section content -->
+          <div class=" grid grid-cols-3 gap-[30px]">
+            <!-- item 1-->
+            <div
+              class="p-10 rounded-5xl bg-background-lighter rounded-[40px] row-span-2 flex justify-center items-center"
+            >
+              <div>
+                <img
+                  class="w-[60px] h-[60px] mb-4"
+                  src="./assets/headphone.png"
+                  alt=""
+                />
+                <h3 class="text-2xl font bold">Premium Audio Quality</h3>
+                <p class="text-base font-normal opacity-[.6] leading-6">
+                  Experience crystal-clear sound with professional-grade
+                  recording equipment and expert audio engineering. Every
+                  episode is mastered for optimal listening across all devices
+                  and platforms.
+                </p>
+              </div>
+            </div>
+
+            <!-- item 2 -->
+            <div
+              class="p-10 rounded-5xl bg-background-lighter rounded-[40px] col-span-2 flex  items-center"
+            >
+              <div>
+                <img
+                  class="w-[40px] h-[60px] mb-4"
+                  src="./assets/device.png"
+                  alt=""
+                />
+                <h3 class="text-2xl font bold">Mobile Friendly</h3>
+                <p class="text-base font-normal opacity-[.6] leading-6">
+                  Listen on the go with seamless mobile experience and offline
+                  downloads.
+                </p>
+              </div>
+            </div>
+
+            <!-- item 3-->
+            <div
+              class="p-10 rounded-5xl bg-background-lighter rounded-[40px] col-span-2 flex  items-center"
+            >
+              <div>
+                <img
+                  class="w-[60px] h-[60px] mb-4"
+                  src="./assets/location.png"
+                  alt=""
+                />
+                <h3 class="text-2xl font bold">Global Community</h3>
+                <p class="text-base font-normal opacity-[.6] leading-6">
+                  Connect with tech enthusiasts from over 120 countries
+                  worldwide.
+                </p>
+              </div>
+            </div>
+
+            <!-- item 4-->
+            <div
+              class="p-10 rounded-5xl bg-background-lighter rounded-[40px] col-span-2 flex  items-center"
+            >
+              <div>
+                <img
+                  class="w-[60px] h-[60px] mb-4"
+                  src="./assets/missing-image.png"
+                  alt=""
+                />
+                <h3 class="text-2xl font bold">Exclusive Interviews</h3>
+                <p class="text-base font-normal opacity-[.6] leading-6">
+                  Get unprecedented access to industry titans, startup founders,
+                  and tech visionaries. Our host secures exclusive conversations
+                  you won't find anywhere else, diving deep into their journeys,
+                  failures, and success strategies.
+                </p>
+              </div>
+            </div>
+
+            <!-- item 5-->
+            <div
+              class="p-10 rounded-5xl bg-background-lighter rounded-[40px] flex  items-center"
+            >
+              <div>
+                <img
+                  class="w-[60px] h-[60px] mb-4"
+                  src="./assets/resource.png"
+                  alt=""
+                />
+                <h3 class="text-2xl font bold">Rich Resources</h3>
+                <p class="text-base font-normal opacity-[.6] leading-6">
+                  Access show notes, transcripts, and additional learning
+                  materials for every episode.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Section -->
+      <section class="w-full bg-background py-[120px]">
+        <!-- container -->
+        <div class="max-w-[1200px] mx-auto">
+          <!-- section heading -->
+          <div class="text-center mb-[40px]">
+            <h2 class="font-bold text-[48px]">Featured Episodes</h2>
+          </div>
+
+          <!-- section content -->
+          <div class="flex justify-around items-center gap-[80px] mt-[80px]">
+            <!-- item -->
+            <div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Meet Section -->
+      <section class="w-full bg-background py-[120px]">
+        <!-- container -->
+        <div class="max-w-[1200px] mx-auto">
+          <!-- section heading -->
+          <div class="text-center mb-[40px]">
+            <h2 class="font-bold text-[48px]">Meet The Host</h2>
+          </div>
+
+          <!-- section content -->
+          <div class="flex justify-around items-center gap-[80px] mt-[80px]">
+            <!-- item -->
+            <div></div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer></footer>
+    <!-- Footer Section -->
+    <section class="w-full bg-background-light py-[120px]">
+      <!-- container -->
+      <div class="max-w-[1200px] mx-auto">
+        <!-- section heading -->
+        <div class="text-center mb-[40px]">
+          <h2 class="font-bold text-[48px]">Why Choose TechWave</h2>
+        </div>
+
+        <!-- section content -->
+        <div class="flex justify-around items-center gap-[80px] mt-[80px]">
+          <!-- item -->
+          <div></div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
