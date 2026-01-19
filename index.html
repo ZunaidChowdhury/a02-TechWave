@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -65,7 +65,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body >
     <header
       class="w-full h-[92px] bg-background py-[22px] border-b border-[rgba(65,37,103,1)]"
     >
@@ -78,12 +78,13 @@
           />
         </a>
         <ul class="flex gap-8">
-          <li><a href="" class="text-base font-medium">About</a></li>
-          <li><a href="">Episodes</a></li>
-          <li><a href="">Host</a></li>
+          <li class="text-white hover:text-[#B503E0] transition-all duration-300 hover:scale-120 "><a href="#about" class="text-base font-medium">About</a></li>
+          <li class="text-white hover:text-[#B503E0] transition-all duration-300 hover:scale-120 "><a href="#episodes">Episodes</a></li>
+          <li class="text-white hover:text-[#B503E0] transition-all duration-300 hover:scale-120 "><a href="#host">Host</a></li>
         </ul>
         <button
-          class="text-base font-semibold px-4 py-3 rounded-full gradient-btn flex justify-center items-center gap-1 cursor-pointer"
+          class="text-base font-semibold px-4 py-3 rounded-full gradient-btn flex justify-center items-center gap-1 cursor-pointer
+               transition-transform duration-300 hover:scale-110"
         >
           <span>Subscribe</span>
           <i class="fa-solid fa-arrow-right"></i>
@@ -107,7 +108,7 @@
               class="relative w-[350px] h-[350px] flex justify-center items-center mb-10"
             >
               <img src="./assets/hero-circle.png" alt="" />
-              <img src="./assets/microphone.png" alt="" class="absolute" />
+              <img src="./assets/microphone.png" alt="" class="absolute hero-mic" />
               <div
                 class="text-[#1A0B2E] font-semibold text-[18px] font px-4 py-2 bg-theme-green rounded-full badge-glow absolute top-3 right-6"
               >
@@ -124,15 +125,15 @@
               growth
             </p>
             <!-- buttons -->
-            <div class="flex gap-2 mt-6">
+            <div class="flex gap-6 mt-6">
               <button
-                class="text-base font-semibold px-5 py-3 rounded-full gradient-btn flex justify-center items-center gap-2 cursor-pointer"
+                class="text-base font-semibold px-5 py-3 rounded-full gradient-btn flex justify-center items-center gap-2 cursor-pointer transition-transform duration-300 hover:scale-110"
               >
                 <img src="./assets/spotify.png" alt="Listen on Spotify" />
                 <span>Listen On Spotify</span>
               </button>
               <button
-                class="text-base font-semibold px-4 py-3 rounded-full border border-theme-green flex justify-center items-center gap-2 cursor-pointer"
+                class="text-base font-semibold px-5 py-3 rounded-full border border-theme-green flex justify-center items-center gap-2 cursor-pointer cursor-pointer transition-transform duration-300 hover:scale-110"
               >
                 <img src="./assets/message.png" alt="Listen on Spotify" />
                 <span class="text-theme-green">Subscribe</span>
@@ -143,7 +144,7 @@
       </section>
 
       <!-- About -->
-      <section class="w-full bg-background pt-[50px] pb-[120px]">
+      <section id="about" class="w-full bg-background pt-[50px] pb-[120px]">
         <!-- container -->
         <div class="max-w-[1200px] mx-auto">
           <!-- section heading -->
@@ -328,7 +329,7 @@
       </section>
 
       <!-- Featured Section -->
-      <section class="w-full bg-background pt-[120px]">
+      <section id="episodes" class="w-full bg-background pt-[120px]">
         <!-- container -->
         <div class="max-w-[1200px] mx-auto">
           <!-- section heading -->
@@ -480,7 +481,7 @@
       </section>
 
       <!-- Meet Section -->
-      <section class="w-full bg-background py-[120px]">
+      <section id="host" class="w-full bg-background py-[120px]">
         <!-- container -->
         <div class="max-w-[1200px] mx-auto">
           <!-- section heading -->
@@ -494,7 +495,7 @@
           >
             <!-- Host image -->
             <div
-              class="w-[200px] h-[200px] shrink-0 rounded-full overflow-hidden"
+              class="w-[200px] h-[200px] shrink-0 rounded-full overflow-hidden host-image"
             >
               <img
                 width="100%"
@@ -517,9 +518,10 @@
               </p>
               <ul class="flex gap-2">
                 <li
-                  class="w-[40px] h-[40px] rounded-full border border-background-lighter-x2 flex justify-center items-center"
+                  class="w-[40px] h-[40px] rounded-full border border-background-lighter-x2 flex justify-center items-center
+                    hover:bg-background-lighter-x2 transition-all duration-300"
                 >
-                  <a href="" target="_blank" rel="noopener noreferrer">
+                  <a href="#host" rel="noopener noreferrer">
                     <div class="w-[20px] h-[20px]">
                       <img
                         src="./assets/linkedin.png"
@@ -532,9 +534,10 @@
                 </li>
 
                 <li
-                  class="w-[40px] h-[40px] rounded-full border border-background-lighter-x2 flex justify-center items-center"
+                  class="w-[40px] h-[40px] rounded-full border border-background-lighter-x2 flex justify-center items-center
+                  hover:bg-background-lighter-x2 transition-all duration-300"
                 >
-                  <a href="" target="_blank" rel="noopener noreferrer">
+                  <a href="#host" rel="noopener noreferrer">
                     <div class="w-[20px] h-[20px]">
                       <img
                         src="./assets/x.png"
@@ -547,9 +550,9 @@
                 </li>
 
                 <li
-                  class="w-[40px] h-[40px] rounded-full border border-background-lighter-x2 flex justify-center items-center"
+                  class="w-[40px] h-[40px] rounded-full border border-background-lighter-x2 flex justify-center items-center hover:bg-background-lighter-x2 transition-all duration-300"
                 >
-                  <a href="" target="_blank" rel="noopener noreferrer">
+                  <a href="#host"  rel="noopener noreferrer">
                     <div class="w-[20px] h-[20px]">
                       <img
                         src="./assets/instagram.png"
@@ -562,9 +565,9 @@
                 </li>
 
                 <li
-                  class="w-[40px] h-[40px] rounded-full border border-background-lighter-x2 flex justify-center items-center"
+                  class="w-[40px] h-[40px] rounded-full border border-background-lighter-x2 flex justify-center items-center hover:bg-background-lighter-x2 transition-all duration-300" 
                 >
-                  <a href="" target="_blank" rel="noopener noreferrer">
+                  <a href="#host"  rel="noopener noreferrer">
                     <div class="w-[20px] h-[20px]">
                       <img
                         src="./assets/youtube.png"

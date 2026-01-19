@@ -48,3 +48,69 @@ body {
     right: 0px;
 
 }
+
+
+/* mic animation */
+
+.hero-mic {
+    animation: mic-animation 5s ease-in-out infinite alternate;
+}
+
+
+@keyframes mic-animation {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    25% {
+        transform: scale(1) rotate(45deg);
+    }
+
+    50% {
+        transform: scale(1.2) rotate(45deg);
+    }
+
+    75% {
+        transform: scale(1) rotate(45deg);
+    }
+
+    100% {
+        transform: scale(1.2) rotate(45deg);
+    }
+}
+
+/* mic animation end */
+
+
+
+
+/* host animation */
+
+.host-image {
+    animation: host-animation 5s ease-in-out infinite alternate;
+}
+
+
+@keyframes host-animation {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.05);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* host animation end */
