@@ -5,22 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechWave</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <!-- GOOGLE FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- for tailwind cdn -->
     <style type="text/tailwindcss">
+      :root {
+        --background: rgba(26, 11, 46, 1);
+        --theme-green: rgba(0, 255, 136, 1);
+      }
       @theme {
         --breakpoint-tablet: 36rem; /* 576px */
         --breakpoint-desktop: 62rem; /* 992px */
+
+        --background-brand-gradient: linear-gradient(
+          47.64deg,
+          rgba(247, 233, 63, 1),
+          rgba(251, 9, 180, 1),
+          rgba(145, 0, 248, 1)
+        );
+      }
+
+      @theme inline {
+        --color-background: var(--background);
+        --color-theme-green: var(--theme-green);
+
+        /* 
+        --color-surface: var(--surface);
+        --color-text-primary: var(--text-primary);
+        --color-text-secondary: var(--text-secondary);
+        --color-primary: var(--primary);
+        --color-primary-dark: var(--primary-dark);
+        --color-secondary: var(--secondary);
+         */
       }
     </style>
 
     <!-- FAV ICON -->
     <link rel="icon" type="image/png" href="./assets/headphone.png" />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <h1 class="text-red-600 tablet:text-green-600 desktop:text-blue-600">
-      Initial commit
-    </h1>
+    <header
+      class="w-full h-[92px] bg-background py-[22px] border-b border-[rgba(65,37,103,1)]"
+    >
+      <nav class="max-w-[1200px] mx-auto flex justify-between items-center">
+        <a href="" class="w-[218px] h-8">
+          <img
+            src="assets/tech-wave-logo.png"
+            alt="tech wave logo."
+            class="w-full h-full"
+          />
+        </a>
+        <ul class="flex gap-8">
+          <li><a href="" class="text-base font-medium">About</a></li>
+          <li><a href="">Episodes</a></li>
+          <li><a href="">Host</a></li>
+        </ul>
+        <button
+          class="text-base font-semibold px-4 py-3 rounded-full gradient-btn flex justify-center items-center gap-1 cursor-pointer"
+        >
+          <span>Subscribe</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="w-full h-[760px] bg-background">
+        <!-- background -->
+        <div
+          class="max-w-[1600px] h-full mx-auto bg-[url(/assets/hero-bg.png)] bg-center bg-no-repeat bg-cover "
+        >
+          <!-- container -->
+          <div class=" max-w-[550px] h-[558px] mx-auto my-auto flex flex-col items-center pt-25">
+            <!-- image -->
+            <div class="relative w-[350px] h-[350px]  flex justify-center items-center mb-10 ">
+              <img src="/assets/hero-circle.png" alt="">
+              <img src="/assets/microphone.png" alt="" class="absolute">
+              <div class="text-[#1A0B2E] font-semibold text-[18px] font px-4 py-2 bg-theme-green rounded-full badge-glow absolute top-3 right-6">NEW</div>
+            </div>
+            <!-- title -->
+            <h2 class="text-[60px] font-extrabold  mb-2">TechWave</h2>
+            <!-- des -->
+            <p
+              class="text-base font-normal text-[rgba(255, 255, 255, 1)] opacity-[.8]"
+            >
+              Your daily dose of tech insights, productivity hacks, and personal
+              growth
+            </p>
+            <!-- buttons -->
+            <div class="flex gap-2 mt-6">
+              <button
+                class="text-base font-semibold px-5 py-3 rounded-full gradient-btn flex justify-center items-center gap-2 cursor-pointer"
+              >
+                <img src="/assets/spotify.png" alt="Listen on Spotify" />
+                <span>Listen On Spotify</span>
+              </button>
+              <button
+                class="text-base font-semibold px-4 py-3 rounded-full border border-theme-green flex justify-center items-center gap-2 cursor-pointer"
+              >
+                <img src="/assets/message.png" alt="Listen on Spotify" />
+                <span class="text-theme-green">Subscribe</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
   </body>
 </html>
