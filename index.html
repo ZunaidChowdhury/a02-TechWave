@@ -69,10 +69,10 @@
     <header
       class="w-full  bg-background border-b border-[rgba(65,37,103,1)]"
     >
-      <nav class="max-w-[1200px] mx-auto px-5 desktop:px-0 py-4 flex justify-between items-center">
+      <nav class="max-w-[1200px] mx-auto px-5 py-4 flex justify-between items-center">
 
         <!-- brand logo -->
-        <a href="" class="max-w-[218px] shrink">
+        <a href="" class="max-w-[138px] tablet:max-w-[218px] shrink">
           <img
             src="./assets/tech-wave-logo.png"
             alt="tech wave logo."
@@ -98,7 +98,7 @@
         </button>
 
         <!-- hamburger -->
-        <button class=" desktop:hidden w-6 h-6">
+        <button class=" desktop:hidden w-6 h-6 cursor-pointer">
           <img src="./assets/hamburger-menu.png" alt="" width="100%" height="100%">
         </button>
         </div>
@@ -110,35 +110,33 @@
       <section class="w-full bg-background">
         <!-- background -->
         <div
-          class="max-w-[1600px] h-full mx-auto bg-[url(./assets/hero-bg.png)] bg-center bg-no-repeat bg-cover"
+          class="max-w-[1600px] mx-auto bg-[url(./assets/hero-bg.png)] bg-center bg-no-repeat bg-cover"
         >
           <!-- container -->
-          <div
-            class="max-w-[550px] mx-auto my-auto flex flex-col items-center pt-25 pb-25"
-          >
+          <div class="max-w-[550px] mx-auto px-5 tablet:px-0 flex flex-col items-center pt-[90px] pb-10 tablet:py-25">
             <!-- image -->
             <div
-              class="relative w-[350px] h-[350px] flex justify-center items-center mb-10"
+              class="relative w-[63.64%]  flex justify-center items-center mb-10"
             >
-              <img src="./assets/hero-circle.png" alt="" />
-              <img src="./assets/microphone.png" alt="" class="absolute hero-mic" />
+              <img src="./assets/hero-circle.png" alt="" width="100%" height="100%" />
+              <img src="./assets/microphone.png" alt="" class="absolute hero-mic w-[18vw] tablet:w-[15vw] md:w-[12vw] lg:w-[9vw] xl:w-[7vw]" />
               <div
-                class="text-[#1A0B2E] font-semibold text-[18px] font px-4 py-2 bg-theme-green rounded-full badge-glow absolute top-3 right-6"
+                class="text-[#1A0B2E] font-semibold text-[18px] font px-4 py-2 bg-theme-green rounded-full badge-glow absolute top-3 right-3 desktop:right-6"
               >
                 NEW
               </div>
             </div>
             <!-- title -->
-            <h2 class="text-[60px] font-extrabold mb-2">TechWave</h2>
+            <h2 class="text-[40px] tablet:text-[60px] font-extrabold mb-2 text-center">TechWave</h2>
             <!-- des -->
             <p
-              class="text-base font-normal text-[rgba(255, 255, 255, 1)] opacity-[.8]"
+              class="text-base text-center font-normal text-[rgba(255, 255, 255, 1)] opacity-[.8]"
             >
               Your daily dose of tech insights, productivity hacks, and personal
               growth
             </p>
             <!-- buttons -->
-            <div class="flex gap-6 mt-6">
+            <div class="flex gap-3 tablet:gap-6 mt-6">
               <button
                 class="text-base font-semibold px-5 py-3 rounded-full gradient-btn flex justify-center items-center gap-2 cursor-pointer transition-transform duration-300 hover:scale-110"
               >
@@ -157,16 +155,15 @@
       </section>
 
       <!-- About -->
-      <section id="about" class="w-full bg-background pt-[50px] pb-[120px]">
+      <section id="about" class="w-full bg-background px-5 py-10 tablet:pt-[50px] tablet:pb-[120px]">
         <!-- container -->
         <div class="max-w-[1200px] mx-auto">
           <!-- section heading -->
-          <div class="text-center mb-[80px]">
-            <h2 class="font-bold text-[48px]">About the Podcast</h2>
+          <div class="text-center mb-10 tablet:mb-20">
+            <h2 class="font-bold text-[32px] tablet:text-[48px] mb-4 tablet:mb-0">About the Podcast</h2>
             <p
-              class="text-base font-normal text-[rgba(255, 255, 255, 1)] opacity-[.8] leading-8"
-            >
-              TechWave is your go-to podcast for staying ahead in the fast-paced
+              class="text-base font-normal text-[rgba(255, 255, 255, 1)] opacity-[.8] leading-5 tablet:leading-8"
+            >TechWave is your go-to podcast for staying ahead in the fast-paced
               world of technology.
               <br />
               We break down complex topics into digestible insights, explore
@@ -183,10 +180,10 @@
           <hr class="opacity-[.1]" />
 
           <!-- section content -->
-          <div class="flex justify-around items-center gap-[80px] mt-[80px]">
+          <div class="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-4 gap-10 tablet:gap-20 mt-10 tablet:mt-20">
             <!-- item -->
             <div class="text-center">
-              <h2 class="font-black text-[48px] text-theme-green mb-4">
+              <h2 class="font-black text-[40px] tablet:text-[48px] text-theme-green mb-4">
                 150K+
               </h2>
               <p
@@ -234,19 +231,20 @@
       </section>
 
       <!-- Why Section -->
-      <section class="w-full bg-background-light py-[120px]">
+      <section class="w-full bg-background-light px-5 py-10 tablet:py-[120px]">
         <!-- container -->
         <div class="max-w-[1200px] mx-auto">
           <!-- section heading -->
-          <div class="text-center mb-[40px]">
-            <h2 class="font-bold text-[48px]">Why Choose TechWave</h2>
+          <div class="text-center mb-4 tablet:mb-10">
+            <h2 class="font-bold text-[32px] tablet:text-[48px]">Why Choose TechWave</h2>
           </div>
 
           <!-- section content -->
-          <div class="grid grid-cols-3 gap-[30px]">
-            <!-- item 1-->
+          <div class="grid grid-cols-1 gap-4 md:grid-cols-2 desktop:grid-cols-3 desktop:gap-[30px]">
+
+                        <!-- item 1-->
             <div
-              class="p-10 rounded-5xl bg-background-lighter rounded-[40px] row-span-2 flex justify-center items-center"
+              class="p-6 desktop:p-10 rounded-5xl bg-background-lighter rounded-[40px] desktop:row-span-2 flex items-center"
             >
               <div>
                 <img
@@ -254,7 +252,7 @@
                   src="./assets/headphone.png"
                   alt=""
                 />
-                <h3 class="text-2xl font-bold">Premium Audio Quality</h3>
+                <h3 class="text-[22px] tablet:text-2xl font-bold">Premium Audio Quality</h3>
                 <p class="text-base font-normal opacity-[.6] leading-6">
                   Experience crystal-clear sound with professional-grade
                   recording equipment and expert audio engineering. Every
@@ -266,7 +264,7 @@
 
             <!-- item 2 -->
             <div
-              class="p-10 rounded-5xl bg-background-lighter rounded-[40px] col-span-2 flex items-center"
+              class="p-6 desktop:p-10 rounded-5xl bg-background-lighter rounded-[40px] desktop:col-span-2 flex items-center"
             >
               <div>
                 <img
@@ -274,7 +272,7 @@
                   src="./assets/device.png"
                   alt=""
                 />
-                <h3 class="text-2xl font-bold">Mobile Friendly</h3>
+                <h3 class="text-[22px] tablet:text-2xl font-bold">Mobile Friendly</h3>
                 <p class="text-base font-normal opacity-[.6] leading-6">
                   Listen on the go with seamless mobile experience and offline
                   downloads.
@@ -284,7 +282,7 @@
 
             <!-- item 3-->
             <div
-              class="p-10 rounded-5xl bg-background-lighter rounded-[40px] col-span-2 flex items-center"
+              class="p-6 desktop:p-10 rounded-5xl bg-background-lighter rounded-[40px] desktop:col-span-2 flex items-center"
             >
               <div>
                 <img
@@ -292,7 +290,7 @@
                   src="./assets/location.png"
                   alt=""
                 />
-                <h3 class="text-2xl font-bold">Global Community</h3>
+                <h3 class="text-[22px] tablet:text-2xl font-bold">Global Community</h3>
                 <p class="text-base font-normal opacity-[.6] leading-6">
                   Connect with tech enthusiasts from over 120 countries
                   worldwide.
@@ -302,7 +300,7 @@
 
             <!-- item 4-->
             <div
-              class="p-10 rounded-5xl bg-background-lighter rounded-[40px] col-span-2 flex items-center"
+              class="p-6 desktop:p-10 rounded-5xl bg-background-lighter rounded-[40px] desktop:col-span-2 flex items-center"
             >
               <div>
                 <img
@@ -310,7 +308,7 @@
                   src="./assets/missing-image.png"
                   alt=""
                 />
-                <h3 class="text-2xl font-bold">Exclusive Interviews</h3>
+                <h3 class="text-[22px] tablet:text-2xl font-bold">Exclusive Interviews</h3>
                 <p class="text-base font-normal opacity-[.6] leading-6">
                   Get unprecedented access to industry titans, startup founders,
                   and tech visionaries. Our host secures exclusive conversations
@@ -322,7 +320,7 @@
 
             <!-- item 5-->
             <div
-              class="p-10 rounded-5xl bg-background-lighter rounded-[40px] flex items-center"
+              class="p-6 w-full desktop:p-10 rounded-5xl bg-background-lighter rounded-[40px] flex items-center"
             >
               <div>
                 <img
@@ -330,7 +328,7 @@
                   src="./assets/resource.png"
                   alt=""
                 />
-                <h3 class="text-2xl font-bold">Rich Resources</h3>
+                <h3 class="text-[22px] tablet:text-2xl font-bold">Rich Resources</h3>
                 <p class="text-base font-normal opacity-[.6] leading-6">
                   Access show notes, transcripts, and additional learning
                   materials for every episode.
@@ -342,16 +340,16 @@
       </section>
 
       <!-- Featured Section -->
-      <section id="episodes" class="w-full bg-background pt-[120px]">
+      <section id="episodes" class="w-full bg-background px-5 pt-10 desktop:pt-[120px]">
         <!-- container -->
         <div class="max-w-[1200px] mx-auto">
           <!-- section heading -->
-          <div class="text-center mb-[40px]">
-            <h2 class="font-bold text-[48px]">Featured Episodes</h2>
+          <div class="text-center mb-6 desktop:mb-10">
+            <h2 class="font-bold text-[32px] tablet:text-[48px]">Featured Episodes</h2>
           </div>
 
           <!-- section content -->
-          <div class="grid grid-cols-3 gap-[30px]">
+          <div class="grid grid-cols-1 md:grid-cols-2 desktop:grid-cols-3 gap-4 desktop:gap-[30px]">
             <!-- item 1-->
             <div class="bg-background-lighter rounded-3xl overflow-hidden">
               <div class="h-[214px] w-full">
@@ -374,8 +372,8 @@
                   allowfullscreen
                 ></iframe>
               </div>
-              <div class="p-6 space-y-3">
-                <h3 class="text-2xl font-bold">
+              <div class="p-6 space-y-2 desktop:space-y-3">
+                <h3 class="text-xl font-bold">
                   The Future of AI in Everyday Life
                 </h3>
                 <p class="text-base font-normal opacity-[.6] leading-6">
@@ -420,8 +418,8 @@
                   allowfullscreen
                 ></iframe>
               </div>
-              <div class="p-6 space-y-3">
-                <h3 class="text-2xl font-bold">
+              <div class="p-6 space-y-2 desktop:space-y-3">
+                <h3 class="text-xl font-bold">
                   Building Better Habits for Remote Work
                 </h3>
                 <p class="text-base font-normal opacity-[.6] leading-6">
@@ -466,8 +464,8 @@
                   allowfullscreen
                 ></iframe>
               </div>
-              <div class="p-6 space-y-3">
-                <h3 class="text-2xl font-bold">
+              <div class="p-6 space-y-2 desktop:space-y-3">
+                <h3 class="text-xl font-bold">
                   Career Growth in Tech: A Roadmap
                 </h3>
                 <p class="text-base font-normal opacity-[.6] leading-6">
@@ -493,18 +491,18 @@
         </div>
       </section>
 
-      <!-- Meet Section -->
-      <section id="host" class="w-full bg-background py-[120px]">
+      <!-- Host Section -->
+      <section id="host" class="w-full bg-background px-5 pt-[60px] pb-10 desktop:py-[120px]">
         <!-- container -->
         <div class="max-w-[1200px] mx-auto">
           <!-- section heading -->
-          <div class="text-center mb-[40px]">
-            <h2 class="font-bold text-[48px]">Meet The Host</h2>
+          <div class="text-center mb-10">
+            <h2 class="font-bold  text-[32px] tablet:text-[48px]">Meet The Host</h2>
           </div>
 
           <!-- section content -->
           <div
-            class="p-10 bg-background-lighter rounded-[40px] flex gap-6 items-center"
+            class="p-10 bg-background-lighter rounded-[40px] flex flex-col desktop:flex-row gap-6 items-center"
           >
             <!-- Host image -->
             <div
@@ -519,19 +517,19 @@
             </div>
             <!-- text -->
             <div class="grow space-y-4">
-              <h3 class="text-[32px] font-bold leading-[32px]">
+              <h3 class="text-[24px] desktop:text-[32px] text-center desktop:text-left font-bold leading-[32px]">
                 Zunaid Chowdhury
               </h3>
-              <p class="text-base font-normal opacity-[.6] leading-6">
+              <p class="text-base text-center desktop:text-left font-normal opacity-[.6] leading-6">
                 Tech entrepreneur, productivity expert, and lifelong learner.
                 Alex has been in the tech industry for over 10 years, working
                 with startups and Fortune 500 companies. Through TechWave, Alex
                 shares insights from industry leaders and practical advice for
                 anyone looking to grow in tech.
               </p>
-              <ul class="flex gap-2">
+              <ul class="flex gap-2 justify-center desktop:justify-start">
                 <li
-                  class="w-[40px] h-[40px] rounded-full border border-background-lighter-x2 flex justify-center items-center
+                  class="w-10 h-10 rounded-full border border-background-lighter-x2 flex justify-center items-center
                     hover:bg-background-lighter-x2 transition-all duration-300"
                 >
                   <a href="#host" rel="noopener noreferrer">
@@ -601,11 +599,11 @@
     <!-- Footer Section -->
     <footer class="w-full bg-background-light">
       <!-- background -->
-      <div class="max-w-[1600px] mx-auto bg-[url(./assets/footer-bg.png)] bg-center bg-no-repeat bg-cover py-[120px]">
+      <div class="max-w-[1600px] mx-auto bg-[url(./assets/footer-bg.png)] bg-center bg-no-repeat bg-cover py-10 px-5 tablet:py-[80px] desktop:py-[120px]">
       <!-- container -->
       <div class="max-w-[1200px] mx-auto flex flex-col items-center">
         <!-- brand image -->
-        <div href="" class="w-[410px] h-[60px] mb-8">
+        <div href="" class="w-[220px] desktop:w-[410px] mb-6 desktop:mb-8">
           <img
             src="./assets/tech-wave-logo.png"
             alt="tech wave logo."
@@ -614,7 +612,7 @@
           />
         </div>
         <!-- socials -->
-        <div class="flex gap-10 mb-8">
+        <div class="flex flex-wrap justify-center gap-8 desktop:gap-10 mb-8">
             <!-- spotify -->
             <div 
                 class="   flex justify-center items-center gap-2">
